@@ -1,9 +1,13 @@
-// Code PasswordInput Component Here
+import { useState } from "react";
 
-function PasswordInput (){
-    return(
-        <></>
-    )
+function PasswordInput({ password, onChange }) {
+  return (
+    <input
+      type="password"
+      value={password}
+      onChange={onChange}
+    />
+  );
 }
 
 export default PasswordInput;
